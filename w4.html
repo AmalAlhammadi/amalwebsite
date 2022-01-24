@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+    
+    <head>
+                      
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Amal Mohamed Website</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+                      
+        
+    </head>
+    
+    
+<body id="page-top">
+ 
+    
+<!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#services">Who am I?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">My Fab Academy Journey</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Final Project</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact me!</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+    
+    
+    <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Welcome To My Journey!</div>
+                <div class="masthead-heading text-uppercase">Amal Mohamed</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Let's Start</a>
+            </div>
+        </header>
+    
+
+ <!--starting the work-->        
+    <div class="text-center">  
+           
+     <p>&nbsp;</p>
+     <h1>Electronics Production</h1>
+        <p>&nbsp;</p>
+      
+    
+    <br>    
+    <p> A printed circuit board (PCB) constructs a conductive and insulating layer. It connects the electronics components internally as well as soldering them to drive the system mechanically. The connection is made over a copper (conductive) sheet laminated onto a non-conductive subpath. Nowadays, PCB is widely used due to its significant impacts compared to its size, making a massive difference in the production world. The following steps show how we fabricate a simple board that allows us to program the upcoming projects:</p>
+    <br>       
+    </div>
+
+   <!-- test the link: <p><a href="p2.html">p2</a></p>  -->
+    
+    <p>&nbsp;</p>
+    <p style="font-size:30px;color:blue;">&nbsp;&nbsp;1-Designing part:</p>
+    <p>In this board, we have used a ready design to print it using CNC milling machine RMS-20 (the one used in UAE FabLab). There are two design parts: the trace and the outline. The traces one is responsible for the internal connection, while the outline is for cutting the outer board. I followed the following steps:</p>
+    
+    
+    <p>1- Download the design files from <a href="http://fab.cba.mit.edu/classes/863.16/doc/projects/ftsmin/fts_mini_traces.png">Traces</a> and <a href="http://fab.cba.mit.edu/classes/863.16/doc/projects/ftsmin/fts_mini_cut.png">Outline</a> as a PNG image</p>
+    <p>&nbsp;</p>
+    <center><img src="Documentation/Electronics%20Production/fts_mini_traces_.png"  width="600" height="300"/> &nbsp; <img src="Documentation/Electronics%20Production/fts_mini_cut.png"  width="600" height="300"/></center>
+    <p>&nbsp;</p>
+    <p>2- Go to <a href=" http://fabmodules.org/">Fabmodules</a> to adjust the setting for each image (trace and outline)</p>
+    <p>3- I started with the traces part by choosing the input format (image.png)</p>
+    <center><img src="Documentation/Electronics%20Production/input.png" alt="..."/></center>
+    <p>&nbsp;</p>
+    <p>4- Select the output format that our CNC milling machine can read (Ronald. rml) and keep all the axis at the origin point (0,0,0)</p>
+    <center><img src="Documentation/Electronics%20Production/output.png"/> &nbsp;&nbsp;&nbsp;&nbsp; <img src="Documentation/Electronics%20Production/axis.png"/></center>
+    <p>&nbsp;</p>
+    <p>5- Moving to the process section >> traces (1/64), where 64 is the size of the used bit (pin) in the machine</p>
+    <center><img src="Documentation/Electronics%20Production/traces%2064.png"/></center>
+    <p>&nbsp;</p>
+    <p>6- Check that all the axis are still at the origin point</p>
+    <p>7- Press calculate and then save; now you're done!!</p>
+    <center><img src="Documentation/Electronics%20Production/calculate.png"/></center>
+    <p>&nbsp;</p>
+    <p>8- Do the same steps for the outline, except for the 5th step, choose outline (1/32) instead of traces (1/64)</p>
+    <center><img src="Documentation/Electronics%20Production/output.png" alt="..."/></center>
+    <p>&nbsp;</p>
+    
+    
+    <p>&nbsp;</p>
+    <p style="font-size:30px;color:blue;">&nbsp;&nbsp;2-Production Part: </p>
+    <p>Moving to the fabrication part and printing our PCB using Roland milling machine RMS-20</p>
+    <p>1- Stick the copper sheet over an MDF wood to ensure its stabilization and to engrave both traces and outline parts well</p>
+    <center><img src="Documentation/Electronics%20Production/sheet.png"/></center>
+    <p>&nbsp;</p>
+    <p>2- Place the milling bit in the collet and tighten it down gently to avoid slipping out and breaking  the tip. These are the two used pin sizes</p>
+    <center><img src="Documentation/Electronics%20Production/tracesbit.png" width="400" height="150"/> &nbsp;&nbsp;&nbsp; <img src="Documentation/Electronics%20Production/outlinebit.png" width="400" height="150"/></center>
+    <p>&nbsp;</p>
+    
+    <p>3- Open Roland software to adjust the cutting and milling position</p>
+    <p>4- Start with milling the traces part (1/64) always since it's more accurate, and then repeat the same steps for the board outline (1/32)</p>
+    <p>5- Manually set up the system coordination by choosing >> user coordinate system </p>
+    <center><img src="Documentation/Electronics%20Production/xyuser.png" width="600" height="400"/></center>
+    <p>&nbsp;</p>
+    <p>6- Change the cursor step to continue instead of X10 </p>
+    <center><img src="Documentation/Electronics%20Production/xycontinue.png" width="600" height="400"/></center>
+    <p>&nbsp;</p>
+    <p>7- Use the xy arrow button to specify the starting point; look to the machine itself to know. Note: the printing will start from down to up from left to right</p>
+    <center><img src="Documentation/Electronics%20Production/xyarrow.png" width="600" height="400"/></center>
+    <p>&nbsp;</p>
+    <p>8- Click on the x/y button at the right of the page to save the coordination and zero the shown values</p>
+    <center><img src="Documentation/Electronics%20Production/xybutton.png" width="600" height="400"/></center>
+    <p>&nbsp;</p>
+    <p>9- Use the z arrow to control the height; once feeling that the pin is near to the copper sheet, continue controlling it by hand to make sure that the tip is touching the sheet and sidestep breaking it. Don't forget to tighten the pin by hand</p>
+    <center><img src="Documentation/Electronics%20Production/zarrow.png" width="600" height="400"/></center>
+    <p>&nbsp;</p>
+    <p>10- Click on the z button at the right of the page to save the coordination and zero the shown values</p>
+    <center><img src="Documentation/Electronics%20Production/zbutton.png" width="600" height="400"/></center>
+    <p>&nbsp;</p>
+    <p>11- Press the setup button on the lower right side to check the setting. The command set shall be RML-1</p>
+   <center> <img src="Documentation/Electronics%20Production/setupbutton.png" width="800" height="400"/></center>
+    <p>&nbsp;</p>
+    <p>12- Directly cut the file >> cut>> delete all >> choose the needed file (traces) >> add >> output </p>
+    <center><img src="Documentation/Electronics%20Production/cutbutton.png" width="800" height="400"/></center>
+    <p>&nbsp;</p>
+    <p>13- For the outline, select (outline) not traces</p>
+    <p>14- The CNC starts the process!</p>
+    <p>15- Change the bit (pin) size to (1/32) and repeat the steps for the outline pattern</p>
+    <p>16- Remove the cutted board from the sheet carefully</p>
+    <p>17- Remove the extra copper layer because it might burn the chip or shorten the circuit</p>
+    <p>18- Check the internal printed connection again; there might be a short circuit</p>
+    
+    
+    <p>&nbsp;</p>
+    <p style="font-size:30px;color:blue;">&nbsp;&nbsp;3- Soldering Part:</p>
+    <p>To build our ISP chip, we need the following components: 2 zener diode of 3.3 v, 1 RED LED, 1 Blue LED, 2R of 1K ohm, 2R of 49 ohm, 2 R of 499 ohm, 2x3 pin holder, 1C of 100nF, 1 of  ATtiny85 controller. </p>
+    <p>&nbsp;</p>
+    <center><img src="Documentation/Electronics%20Production/component.jpg" /></center>  
+    <p>&nbsp;</p>
+    <p>Before soldering any components, we must check their conductivity using a multimeter. First, connect the red probe to the V node and the black probe to the com node. Based on what part is going to be measured, I placed the pointer. In this case, the pointer will be placed beyond the ohm's point for all the parts. Since there is no specific polarity for the resistor and the capacitor, it doesn't matter where to connect the black and red bars. The metric values of the resistors must be in ohm and almost the same as the actual value. For the zener diode, the voltage must be around 0.5 for the forward direction while zero in the reverse order. Note that the cathode side is negative (the light line). The LED will blink in the forward direction for the typical diode (LED), which means it is working correctly. Connect the cathode side to the black probe (negative) and the anode side to the red one (positive). After testing all the elements and ensuring they are not damaged, start soldering them!!</p>
+    <p>Follow the below schematics to understand how the components are connected to each other internally, and be careful:</p>
+    <center>    <img src="Documentation/Electronics%20Production/board.png" /></center> 
+    <p>&nbsp;</p>
+    <p>Assure the orientation of each component. The ATtiny85 marks pin 1 with a dot laser-etched into the corner of the package. Pin 1 is located at the left-down corner.</p>
+     <p>&nbsp;</p>
+    <center> <img src="Documentation/Electronics%20Production/schematic.png" /></center>
+     <p>&nbsp;</p>
+    <p>There are no specific steps to solder the components, but my own way that I followed is: </p>
+    <p>1- Heat the element and the place you want to solder</p>
+    <p>2- Add a solder material to that place </p>
+    <p>3- Use a tweezer to fix the element at that place </p>
+    <p>4- Heat the soldering material and add more again</p>
+    <p>5- Keep holding the element and press on its body till fixing it</p>
+    <p>6- Solder the second side of the element in the same manner but ignore the 2nd step here</p>
+    <p>&nbsp;</p>
+    <p>After finishing soldering the components, test the circuit conductivity again and guarantee there is no short between any two nodes (Vcc and GND). The following picture shows my own chip:</p>
+    
+
+    <p>&nbsp;</p>
+    <p style="font-size:30px;color:blue;">&nbsp;&nbsp;4-Programming part:</p>
+    
+    <p>To program the FabTinyISP chip, Windows users require three software to set up a suitable environment. I followed Maha Al Hashimi's way of installing the requirements. </p>
+    <p>The installed softwares are: </p>
+    <p>1-<a href="https://sourceforge.net/projects/winavr/">WinAVR 20100110</a></p>
+    <p>2-<a href="https://zadig.akeo.ie/">Zadig</a></p>
+    <p>3-<a href="Documentation/Electronics%20Production/fts_firmware_bdm_v1.zip">FTS firmware</a></p>
+    <p>&nbsp;</p>
+    <p>I started with downloading AVR software because it takes a long time. </p>
+    <p>1- Go to <a href="https://sourceforge.net/projects/winavr/">WinAVR 20100110</a> to install it, and then run it. </p>
+    <p>2- on your computer go to This PC >> WinAVR folder >> bin</p>
+    <p>3- Delete both avrdude.conf and avrdude files</p>
+    <p>4- Visit <a href="http://download.savannah.gnu.org/releases/avrdude/">Version 6.3 2016</a>and save the avrdude-6.3-mingw32 zip file</p>
+    <center><img src="Documentation/Electronics%20Production/avrdude-6.3.png" width="1000" height="100"/></center>
+    <p>5- Replace the deleted files with the newer version of them (on bin folder)</p>
+    <p>6- In control panel >> systems >> advanced system settings >> environment variables >> path >> edit >> delete the old AVR path (if installed) >> add the new path of the bin folder by copping its location (../WinAvr/bin)</p>
+    <center><img src="Documentation/Electronics%20Production/controlpanel.png" width="800" height="400"/></center>
+    <p>&nbsp;</p>
+    <center><img src="Documentation/Electronics%20Production/controlpanel1.png" width="400" height="400"/></center>
+    <p>&nbsp;</p>
+    <p>7- Now download <a href="https://zadig.akeo.ie/">Zadig</a>, a Windows application that installs generic USB drivers, such as WinUSB, libusb-win32/libusb0.sys or libusbK, to help you access USB devices</p>
+    <p>8- Install <a href="Documentation/Electronics%20Production/fts_firmware_bdm_v1.zip">FTS firmware</a> >> extract the zip file </p>
+    <p>9- Open the terminal window >> open the extracted directory (source code) using cd >> run make command to build a hex file that will get programmed onto the Ttiny85</p>
+    <center><img src="Documentation/Electronics%20Production/terminal%20window%20.png" width="700" height="400"/></center>
+    <p>&nbsp;</p>
+    <p>10- A fts_firmware.hex file is created on that directory </p>
+    <center><img src="Documentation/Electronics%20Production/hex.png"  width="600" height="300"/></center>
+    <p>&nbsp;</p>
+    <p>11- Open GitBash and open the fts_firmware_bdm_v1 folder using the cd command </p>
+    <p>&nbsp;</p>
+    <center><img src="Documentation/Electronics%20Production/cd%20command%20.png"  width="600" /></center>
+    <p>&nbsp;</p>
+    <p>12- Check if all the drivers are correctly installed using the following commands:</p>
+    <p>&nbsp;&nbsp; &nbsp; &nbsp; a)Make -v >>  to test if the command  is work</p>
+    <center><img src="Documentation/Electronics%20Production/Make%20-v.png"  width="600" /></center>
+     <p>&nbsp;</p>
+    <p>&nbsp;&nbsp; &nbsp; &nbsp; b)Avr-gcc --version >>  ensure that the appropriate version of the software is installed</p>
+    <center><img src="Documentation/Electronics%20Production/Avr-gcc%20--version.png"  width="600" /></center>
+    <p>&nbsp;</p>
+    <p>&nbsp;&nbsp; &nbsp; &nbsp; c)avrdude -c usbtiny -p t45 >> check for the avrdude file </p>
+    <p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; i.Before connecting the TinyISP </p>
+    <center><img src="Documentation/Electronics%20Production/avrdude%20-c%20usbtiny%20-p%20t45.png"  width="600" /></center>    
+    <p>&nbsp;</p>    
+    <p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ii.After connecting it </p>
+    
+    
+    <p>11- Connect the programmed ISP (Eng. Hashim ISP) and run zadig</p>
+    <p>12- Select the programming >> select “libsub-win32 (v1.2.6.0)” >> replace drive</p>
+    
+    <p>13- Prepare a ribbon cable of 6 wires since our header is of 6 pins</p>
+        <p>&nbsp;&nbsp; &nbsp; &nbsp; i.Cut a suitable wire length, and connect a female connector on both sides </p>
+        <p>&nbsp;&nbsp; &nbsp; &nbsp; ii.Place the wire in between the body of the connector and its cover  </p>
+        <p>&nbsp;&nbsp; &nbsp; &nbsp; iii.Be careful; both wires' sides shall be connected to the same pin on both connectors, the two connectors must face the same direction   </p>
+        <p>&nbsp;&nbsp; &nbsp; &nbsp; iv.Use a hammer to secure them    </p>
+        <p>&nbsp;&nbsp; &nbsp; &nbsp; v.Connect your ISP chip and the programmed one to the cable     </p>
+    
+    <p  style="color:red;">&nbsp;&nbsp; &nbsp; &nbsp; Note: if the blue wire is located at the left side of the first connector, the first left wire of the second connector must be blue also. Look at the below image to understand</p>
+
+    <p>14- Program the ISP chip through your terminal window:</p>
+       <p>&nbsp;&nbsp; &nbsp; &nbsp; i.Open the directory where you saved the .hex file</p>
+       <p>&nbsp;&nbsp; &nbsp; &nbsp; ii.Run make flash command >> to erase the target chip and program its flash memory with the contents of the .hex file you built before. several progress bars will appear while avrdude erases, programs and verifies the chip</p>
+    
+    
+    
+    
+    
+       <p>&nbsp;&nbsp; &nbsp; &nbsp; iii.Run make fuses command >> to set up the fuses</p>
+    
+    
+       <p>&nbsp;&nbsp; &nbsp; &nbsp; iv.Run make rstdisbl >> disable the reset pin to ban program it again </p>
+    
+    <p>15- Congratulation!! your ISP is ready to program another board!!</p>
+
+
+
+    
+
+         
+    
+    </body>    
+    </html>
+    
