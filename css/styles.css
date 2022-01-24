@@ -160,8 +160,8 @@ p {
 
 abbr[title],
 abbr[data-bs-original-title] {
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  -webkit-text-decoration: dotted;
+          text-decoration: dotted;
   cursor: help;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
@@ -237,7 +237,7 @@ sup {
 
 a {
   color: #ffc800;
-  text-decoration: underline;
+
 }
 a:hover {
   color: #cca000;
@@ -3472,7 +3472,6 @@ textarea.form-control-lg {
 .btn-link {
   font-weight: 400;
   color: #ffc800;
-  text-decoration: underline;
 }
 .btn-link:hover {
   color: #cca000;
@@ -7680,8 +7679,7 @@ textarea.form-control-lg {
   text-decoration: none !important;
 }
 
-.text-decoration-underline {
-  text-decoration: underline !important;
+
 }
 
 .text-decoration-line-through {
@@ -11725,7 +11723,7 @@ section#contact {
   background-position: center;
 }
 section#contact .section-heading {
-  color: #fff;
+  color: #black
 }
 section#contact form#contactForm .form-group {
   margin-bottom: 1.5rem;
